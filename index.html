@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth font-texto">
+<html lang="pt-br" class="scroll-smooth font-texto text-white">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Importação Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src=""></script>
     <script>
         tailwind.config = {
             theme:{
@@ -48,9 +49,14 @@
                     },
                     backgroundImage:{
                         'boreal':"url('img/BorealMobile.svg')",
+                        'guitar':"url('img/guitar.svg')",
                     },
                     dropShadow:{
                         'botao': '4px 4px 0px #444444'
+                    },
+                    fontSize:{
+                    '32xl': '2rem',
+                    '40xl': '2.5rem',
                     }
                 }
             }
@@ -83,27 +89,70 @@
                 <img src="img/ticket.svg" alt="logo de um ticket">
             </a>
         </section>
-        <section class="flex flex-col items-center mt-20">
-            <h2 class="text-white text-5xl font-titulo font-normal">/Line-Up/</h2>
-            <h3>SÁBADO &lt;11/03&gt;</h3>
-            <ul class="flex flex-col">
-                <li>System of a DOM</li>
-                <li>Python Maiden</li>
-                <li>Apollo Client 2001</li>
-                <li>Bon Java</li>
-                <li>NickCallback</li>
-                <li>Linkin Promises</li>
-                <li>Fullstack Fighters</li>
-                <li>Papa React</li>
-                <li>Angular in Chains</li>
-                <li>Agnostic Front-end</li>
-                <li>SlipkNode</li>
-                <li>Pink Flutter</li>
-                <li>Kiss</li>
-            </ul>
-        </section>
 
-    </main>   
-    <footer></footer>
+        <!-- Atrações -->
+        <section class="flex flex-col items-center mt-24">
+            <h2 class="text-white text-5xl font-titulo font-normal">/Line-Up/</h2>
+            <!-- Atrações Sab -->
+            <h3 class="my-16 text-32xl text-white font-titulo bg-verde-escuro p-4 text-center">SABADO &lt;11/03&gt;</h3>
+            <div>
+                <ul class="flex flex-col gap-y-5 mx-4">
+                    <li class="text-5xl font-extrabold text-white text-center">System of a DOM</li>
+                    <li class="text-40xl text-white text-center font-bold">Python Maiden</li>
+                    <li class="text-40xl text-white text-center font-bold">Apollo Client 2001</li>
+                    <li class="text-40xl text-white text-center font-bold">Bon Java</li>
+                    <li class="text-40xl text-white text-center font-bold">NickCallback</li>
+                    <li class="text-white text-center font-bold text-32xl">Linkin Promises</li>
+                    <li class="text-white text-center font-bold text-32xl">Fullstack Fighters</li>
+                    <li class="text-white text-center font-bold text-32xl">Papa React</li>
+                    <li class="text-white text-center font-bold text-32xl">Angular in Chains</li>
+                    <li class="text-white text-center text-32xl font-medium">Agnostic Front-end</li>
+                    <li class="text-white text-center text-32xl font-medium">SlipkNode</li>
+                    <li class="text-white text-center text-32xl font-medium">Pink Flutter</li>
+                    <li class="text-white text-center text-32xl font-medium">Kiss</li>
+                </ul>
+            </div>
+            <!-- Atrações Dom -->
+            <h3 class="my-16 text-32xl text-white font-titulo bg-verde-escuro p-4 text-center">DOMINGO &lt;12/03&gt;</h3>
+            <div>
+                <ul class="flex flex-col gap-y-5 mx-4">
+                    <li class="text-5xl font-extrabold text-white text-center">Lana Del Ploy</li>
+                    <li class="text-40xl text-white text-center font-bold">Dua Lib</li>
+                    <li class="text-40xl text-white text-center font-bold">The Backnd</li>
+                    <li class="text-40xl text-white text-center font-bold">CSS Styles</li>
+                    <li class="text-40xl text-white text-center font-bold">ArrayAna Grande</li>
+                    <li class="text-white text-center font-bold text-32xl">Dj Query</li>
+                    <li class="text-white text-center font-bold text-32xl">Miley Cypress</li>
+                    <li class="text-white text-center font-bold text-32xl">The Bootstrap Boys</li>
+                    <li class="text-white text-center font-bold text-32xl">Json Derulo</li>
+                    <li class="text-white text-center text-32xl font-medium">CloudPlay</li>
+                    <li class="text-white text-center text-32xl font-medium">Dev Lovato</li>
+                    <li class="text-white text-center text-32xl font-medium">Kylie MiLOG</li>
+                    <li class="text-white text-center text-32xl font-medium">Jenkins Brothers</li>
+                    <li class="text-white text-center text-32xl font-medium">Rubycat Dolls</li>
+                </ul>
+            </div>
+            <!-- Banner c/ overlay -->
+            <div class="h-80 w-full bg-guitar bg-no-repeat bg-cover mix-blend-multiply mt-16 shadow-xl">
+            </div>
+        </section>
+    </main> 
+
+    <footer>
+        <section class="flex flex-col items-center mt-8 mb-6">
+            <img src="img/logo.svg" alt="Logo da CodeChella">
+            <span class="mt-4 text-xl font-medium">Acesses nossas redes:</span>
+                <div class="flex flex-row my-4 gap-3">
+                <a href="#"><img src="img/whatsapp.svg" alt="Icone Whatsapp"></a>
+                <a href="#"><img src="img/twitch.svg" alt="Icone Twitch"></a>
+                <a href="#"><img src="img/insta.svg" alt="Icone Instagram"></a>
+                <a href="#"><img src="img/twitter.svg" alt="Icone Twitter"></a>
+            </div>
+            <span class="text-xl font-medium mt-6">Desenvolvido por <strong>Rafael</strong>.</span>
+            <span class="text-xl font-medium mt-3">Projeto fictício sem fins comerciais</span>
+        </section>
+    </footer>
+
+    <script></script>
 </body>
 </html>
