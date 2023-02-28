@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella</title>
+    <!-- Fontes importação -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Importação Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                extend:{
+                    colors:{
+                        roxo:{
+                            // Cor primaria
+                            escuro:'#4650BD',
+                            claro:'#B6BCFF',
+                            
+                            
+
+                        },
+                        verde:{
+                            // BG datas
+                            escuro:'#008364',
+                            // Secundaria
+                            secundaria:'#304968',
+                            // Tercearia
+                            tercearia:'#36c1a0',
+
+                            // Gradiente background
+                            gradiente:'linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);'
+                        },
+                        gradiente:{
+                            inicio:'#304968',
+                            meio:'#36C1A0',
+                            fim:'#4650BD',
+                        }
+                    },
+                    fontFamily:{
+                        titulo:['Calistoga','sans-serif'],
+                        texto:['Raleway','sans-serif']
+                    },
+                    backgroundImage:{
+                        'boreal':"url('img/BorealMobile.svg')",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-gradiente-inicio via-gradiente-meio to-gradiente-fim bg-no-repeat h-max">
+    <!-- Header -->
+    <header class="sticky">
+        <div class="flex justify-around items-center bg-roxo-escuro h-32">
+            <img src="img/logo.svg" alt="logo CodeChella">
+            <img src="img/menu.svg" alt="Menu Hamburguer">
+        </div>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section class="h-72 bg-boreal bg-no-repeat bg-cover bg-scroll flex items-center ">
+            <h2 class='text-center  font-titulo text-white text-3xl tracking-wide' >Boas-vindas ao #CodeChella2023!</h2>
+        </section>
+        <!-- Datas -->
+        <section class="flex flex-col items-center m-8">
+            <img src="img/Homepage1.svg" alt="três homens tocando instrumentos em um show" class="h-96 m-auto my-8">
+            <h2 class="text-3xl text-white font-texto font-bold text-center">&lt; 11 e 12 de Março &gt;</h2>
+            <h2 class="text-3xl text-white font-texto font-bold text-center">Aluródromo de São Paulo</h2>
+            <span class="text-lg text-white font-text font-normal text-center leading-9">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre
+                 música, linguagens e, claro, tecnologia!
+                Somos um festival diverso, com vários artistas e referências. Divirta-se!</span>
+            <a href="#"><p>Comprar ingresso!</p> <img src="" alt=""></a>
+        </section>
+
+    </main>   
+    <footer></footer>
+</body>
+</html>
