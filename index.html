@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth font-texto">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,7 @@
                             // Cor primaria
                             escuro:'#4650BD',
                             claro:'#B6BCFF',
+                            hover:'#606ADA',
                             
                             
 
@@ -47,6 +48,9 @@
                     },
                     backgroundImage:{
                         'boreal':"url('img/BorealMobile.svg')",
+                    },
+                    dropShadow:{
+                        'botao': '4px 4px 0px #444444'
                     }
                 }
             }
@@ -63,7 +67,7 @@
     </header>
     <main>
         <!-- Banner -->
-        <section class="h-72 bg-boreal bg-no-repeat bg-cover bg-scroll flex items-center ">
+        <section class="h-60 bg-boreal bg-no-repeat bg-cover bg-scroll flex items-center ">
             <h2 class='text-center  font-titulo text-white text-3xl tracking-wide' >Boas-vindas ao #CodeChella2023!</h2>
         </section>
         <!-- Datas -->
@@ -71,10 +75,32 @@
             <img src="img/Homepage1.svg" alt="três homens tocando instrumentos em um show" class="h-96 m-auto my-8">
             <h2 class="text-3xl text-white font-texto font-bold text-center">&lt; 11 e 12 de Março &gt;</h2>
             <h2 class="text-3xl text-white font-texto font-bold text-center">Aluródromo de São Paulo</h2>
-            <span class="text-lg text-white font-text font-normal text-center leading-9">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre
+            <span class="text-lg text-white font-texto font-normal text-center leading-9">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre
                  música, linguagens e, claro, tecnologia!
                 Somos um festival diverso, com vários artistas e referências. Divirta-se!</span>
-            <a href="#"><p>Comprar ingresso!</p> <img src="" alt=""></a>
+            <a href="#" class="flex justify-center gap-x-6 bg-roxo-escuro py-3 w-11/12 mt-8 drop-shadow-botao hover:bg-roxo-hover rounded-2xl">
+                <p class="text-white text-xl font-bold">Comprar ingresso!</p> 
+                <img src="img/ticket.svg" alt="logo de um ticket">
+            </a>
+        </section>
+        <section class="flex flex-col items-center mt-20">
+            <h2 class="text-white text-5xl font-titulo font-normal">/Line-Up/</h2>
+            <h3>SÁBADO &lt;11/03&gt;</h3>
+            <ul class="flex flex-col">
+                <li>System of a DOM</li>
+                <li>Python Maiden</li>
+                <li>Apollo Client 2001</li>
+                <li>Bon Java</li>
+                <li>NickCallback</li>
+                <li>Linkin Promises</li>
+                <li>Fullstack Fighters</li>
+                <li>Papa React</li>
+                <li>Angular in Chains</li>
+                <li>Agnostic Front-end</li>
+                <li>SlipkNode</li>
+                <li>Pink Flutter</li>
+                <li>Kiss</li>
+            </ul>
         </section>
 
     </main>   
