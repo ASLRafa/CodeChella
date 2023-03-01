@@ -48,15 +48,20 @@
                         texto:['Raleway','sans-serif']
                     },
                     backgroundImage:{
-                        'boreal':"url('img/BorealMobile.svg')",
+                        'borealmobile':"url('img/BorealMobile.svg')",
+                        'borealtablet':"url('img/BorealTablet.svg')",
                         'guitar':"url('img/guitar.svg')",
                     },
                     dropShadow:{
                         'botao': '4px 4px 0px #444444'
                     },
                     fontSize:{
-                    '32xl': '2rem',
-                    '40xl': '2.5rem',
+                        '32xl': '2rem',
+                        '40xl': '2.5rem',
+                        '64xl': '4rem',
+                    },
+                    height:{
+                        '110':'28rem'
                     }
                 }
             }
@@ -66,25 +71,34 @@
 <body class="bg-gradient-to-b from-gradiente-inicio via-gradiente-meio to-gradiente-fim bg-no-repeat h-max">
     <!-- Header -->
     <header class="sticky">
-        <div class="flex justify-around items-center bg-roxo-escuro h-32">
-            <img src="img/logo.svg" alt="logo CodeChella">
-            <img src="img/menu.svg" alt="Menu Hamburguer">
+        <div class="flex justify-around items-center bg-roxo-escuro h-32 md:block md:h-48">
+            <img src="img/logo.svg" alt="logo CodeChella" class="md:m-auto md:pt-8">
+            <div class="hidden md:inline">
+                <ul class="flex justify-around flex-row gap-3 mt-8 mx-12">
+                    <li class="font-bold text-xl"><a href="#">A experiência</a></li>
+                    <li class="font-bold text-xl"><a href="#">Mapa de Setores</a></li>
+                    <li class="font-bold text-xl"><a href="#">Informações</a></li>
+                    <li class="font-bold text-xl"><a href="#">Ingresso</a></li>
+                </ul>
+            </div>
+            <img src="img/menu.svg" alt="Menu Hamburguer" class="md:hidden">
         </div>
     </header>
     <main>
         <!-- Banner -->
-        <section class="h-60 bg-boreal bg-no-repeat bg-cover bg-scroll flex items-center ">
-            <h2 class='text-center  font-titulo text-white text-3xl tracking-wide' >Boas-vindas ao #CodeChella2023!</h2>
+        <section class="h-60 bg-borealmobile bg-no-repeat bg-cover bg-scroll flex items-center md:bg-borealtablet md:h-110 ">
+            <h2 class='text-center  font-titulo text-white text-3xl tracking-wide md:text-64xl md:leading-tight' >Boas-vindas ao #CodeChella2023!</h2>
         </section>
         <!-- Datas -->
-        <section class="flex flex-col items-center m-8">
-            <img src="img/Homepage1.svg" alt="três homens tocando instrumentos em um show" class="h-96 m-auto my-8">
-            <h2 class="text-3xl text-white font-texto font-bold text-center">&lt; 11 e 12 de Março &gt;</h2>
-            <h2 class="text-3xl text-white font-texto font-bold text-center">Aluródromo de São Paulo</h2>
-            <span class="text-lg text-white font-texto font-normal text-center leading-9">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre
+        <section class="flex flex-col items-center m-8 md">
+            <img src="img/HomepageMobile.svg" alt="três homens tocando instrumentos em um show" class="h-96 m-auto my-8 md:hidden">
+            <img src="img/HomepageTablet.svg" alt="três homens tocando instrumentos em um show" class="hidden md:inline md:m-auto md:mb-12">
+            <h2 class="text-3xl text-white font-texto font-bold text-center md:text-32xl">&lt; 11 e 12 de Março &gt;</h2>
+            <h2 class="text-3xl text-white font-texto font-bold text-center md:text-32xl md:mb-10">Aluródromo de São Paulo</h2>
+            <span class="text-lg text-white font-texto font-normal text-center leading-9 md:text-xl md:leading-10 md:mx-12">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre
                  música, linguagens e, claro, tecnologia!
                 Somos um festival diverso, com vários artistas e referências. Divirta-se!</span>
-            <a href="#" class="flex justify-center gap-x-6 bg-roxo-escuro py-3 w-11/12 mt-8 drop-shadow-botao hover:bg-roxo-hover rounded-2xl">
+            <a href="#" class="flex justify-center gap-x-6 bg-roxo-escuro py-3 w-11/12 mt-8 drop-shadow-botao hover:bg-roxo-hover rounded-2xl md:w-5/12 md:py-5">
                 <p class="text-white text-xl font-bold">Comprar ingresso!</p> 
                 <img src="img/ticket.svg" alt="logo de um ticket">
             </a>
@@ -92,44 +106,52 @@
 
         <!-- Atrações -->
         <section class="flex flex-col items-center mt-24">
-            <h2 class="text-white text-5xl font-titulo font-normal">/Line-Up/</h2>
+            <h2 class="text-white text-5xl font-titulo font-normal md:text-64xl md:leading-none">/Line-Up/</h2>
             <!-- Atrações Sab -->
-            <h3 class="my-16 text-32xl text-white font-titulo bg-verde-escuro p-4 text-center">SABADO &lt;11/03&gt;</h3>
+            <div class="flex flex-row w:full items-center gap-10">
+                <span class="hidden md:inline md:bg-verde-escuro md:h-px md:w-20"></span>
+                <h3 class="my-16 text-32xl text-white font-titulo bg-verde-escuro p-4 text-center md:text-5xl">SABADO &lt;11/03&gt;</h3>
+                <span class="hidden md:inline md:bg-verde-escuro md:h-px md:w-20"></span>
+            </div>
             <div>
-                <ul class="flex flex-col gap-y-5 mx-4">
-                    <li class="text-5xl font-extrabold text-white text-center">System of a DOM</li>
-                    <li class="text-40xl text-white text-center font-bold">Python Maiden</li>
-                    <li class="text-40xl text-white text-center font-bold">Apollo Client 2001</li>
-                    <li class="text-40xl text-white text-center font-bold">Bon Java</li>
-                    <li class="text-40xl text-white text-center font-bold">NickCallback</li>
-                    <li class="text-white text-center font-bold text-32xl">Linkin Promises</li>
-                    <li class="text-white text-center font-bold text-32xl">Fullstack Fighters</li>
-                    <li class="text-white text-center font-bold text-32xl">Papa React</li>
-                    <li class="text-white text-center font-bold text-32xl">Angular in Chains</li>
-                    <li class="text-white text-center text-32xl font-medium">Agnostic Front-end</li>
-                    <li class="text-white text-center text-32xl font-medium">SlipkNode</li>
-                    <li class="text-white text-center text-32xl font-medium">Pink Flutter</li>
-                    <li class="text-white text-center text-32xl font-medium">Kiss</li>
+                <ul class="flex flex-col gap-y-5 mx-4 md:flex-row md:flex-wrap md:gap-x-8 md:items-center md:mx-12 md:justify-center">
+                    <li class="text-5xl font-extrabold text-white text-center md:w-full">System of a DOM</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">Python Maiden</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">Apollo Client 2001</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">Bon Java</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">NickCallback</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">Linkin Promises</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">Fullstack Fighters</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">Papa React</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">Angular in Chains</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Agnostic Front-end</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">SlipkNode</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Pink Flutter</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Kiss</li>
                 </ul>
             </div>
             <!-- Atrações Dom -->
-            <h3 class="my-16 text-32xl text-white font-titulo bg-verde-escuro p-4 text-center">DOMINGO &lt;12/03&gt;</h3>
+            <div class="flex flex-row w:full items-center gap-10">
+                <span class="hidden md:inline md:bg-verde-escuro md:h-px md:w-20"></span>
+                <h3 class="my-16 text-32xl text-white font-titulo bg-verde-escuro p-4 text-center md:text-5xl">DOMINGO &lt;12/03&gt;</h3>
+                <span class="hidden md:inline md:bg-verde-escuro md:h-px md:w-20"></span>
+            </div>
             <div>
-                <ul class="flex flex-col gap-y-5 mx-4">
-                    <li class="text-5xl font-extrabold text-white text-center">Lana Del Ploy</li>
-                    <li class="text-40xl text-white text-center font-bold">Dua Lib</li>
-                    <li class="text-40xl text-white text-center font-bold">The Backnd</li>
-                    <li class="text-40xl text-white text-center font-bold">CSS Styles</li>
-                    <li class="text-40xl text-white text-center font-bold">ArrayAna Grande</li>
-                    <li class="text-white text-center font-bold text-32xl">Dj Query</li>
-                    <li class="text-white text-center font-bold text-32xl">Miley Cypress</li>
-                    <li class="text-white text-center font-bold text-32xl">The Bootstrap Boys</li>
-                    <li class="text-white text-center font-bold text-32xl">Json Derulo</li>
-                    <li class="text-white text-center text-32xl font-medium">CloudPlay</li>
-                    <li class="text-white text-center text-32xl font-medium">Dev Lovato</li>
-                    <li class="text-white text-center text-32xl font-medium">Kylie MiLOG</li>
-                    <li class="text-white text-center text-32xl font-medium">Jenkins Brothers</li>
-                    <li class="text-white text-center text-32xl font-medium">Rubycat Dolls</li>
+                <ul class="flex flex-col gap-y-5 mx-4 md:flex-row md:flex-wrap md:gap-x-8 md:items-center md:mx-8 md:justify-center">
+                    <li class="text-5xl font-extrabold text-white text-center md:w-full">Lana Del Ploy</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">Dua Lib</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">The Backnd</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">CSS Styles</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">ArrayAna Grande</li>
+                    <li class="text-40xl text-white text-center font-bold md:justify-self-stretch">Dj Query</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">Miley Cypress</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">The Bootstrap Boys</li>
+                    <li class="text-white text-center font-bold text-32xl md:justify-self-stretch">Json Derulo</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">CloudPlay</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Dev Lovato</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Kylie MiLOG</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Jenkins Brothers</li>
+                    <li class="text-white text-center text-32xl font-medium md:justify-self-stretch">Rubycat Dolls</li>
                 </ul>
             </div>
             <!-- Banner c/ overlay -->
@@ -139,17 +161,21 @@
     </main> 
 
     <footer>
-        <section class="flex flex-col items-center mt-8 mb-6">
-            <img src="img/logo.svg" alt="Logo da CodeChella">
-            <span class="mt-4 text-xl font-medium">Acesses nossas redes:</span>
-                <div class="flex flex-row my-4 gap-3">
-                <a href="#"><img src="img/whatsapp.svg" alt="Icone Whatsapp"></a>
-                <a href="#"><img src="img/twitch.svg" alt="Icone Twitch"></a>
-                <a href="#"><img src="img/insta.svg" alt="Icone Instagram"></a>
-                <a href="#"><img src="img/twitter.svg" alt="Icone Twitter"></a>
+        <section class="flex flex-col items-center mt-8 mb-6 md:justify-center md:gap-8">
+            <img src="img/logo.svg" alt="Logo da CodeChella" class="md:w-full md:h-20">
+            <div class="flex flex-col items-center  md:flex-row md:gap-4">
+                <span class="text-xl font-medium ">Acesses nossas redes:</span>
+                <div class="flex flex-row my-4 gap-3 md:my-0 ">
+                    <a href="#"><img src="img/whatsapp.svg" alt="Icone Whatsapp"></a>
+                    <a href="#"><img src="img/twitch.svg" alt="Icone Twitch"></a>
+                    <a href="#"><img src="img/insta.svg" alt="Icone Instagram"></a>
+                    <a href="#"><img src="img/twitter.svg" alt="Icone Twitter"></a>
+                </div>
             </div>
-            <span class="text-xl font-medium mt-6">Desenvolvido por <strong>Rafael</strong>.</span>
-            <span class="text-xl font-medium mt-3">Projeto fictício sem fins comerciais</span>
+            <div class="flex flex-col md:flex-row md:items-center md:gap-3">
+                <span class="text-xl font-medium mt-6 text-center md:block md:mt-0">Desenvolvido por <strong>Rafael</strong>.</span>
+                <span class="text-xl font-medium mt-3 text-center md:block md:mt-0">Projeto fictício sem fins comerciais</span>
+            </div>
         </section>
     </footer>
 
