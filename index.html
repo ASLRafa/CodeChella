@@ -51,6 +51,7 @@
                         'borealmobile':"url('img/BorealMobile.svg')",
                         'borealtablet':"url('img/BorealTablet.svg')",
                         'guitar':"url('img/guitar.svg')",
+                        'guitardesktop':"url('img/guitarDesktop.jpg')",
                     },
                     dropShadow:{
                         'botao': '4px 4px 0px #444444'
@@ -70,11 +71,11 @@
 </head>
 <body class="bg-gradient-to-b from-gradiente-inicio via-gradiente-meio to-gradiente-fim bg-no-repeat h-max">
     <!-- Header -->
-    <header class="sticky">
-        <div class="flex justify-around items-center bg-roxo-escuro h-32 md:block md:h-48">
-            <img src="img/logo.svg" alt="logo CodeChella" class="md:m-auto md:pt-8">
+    <header class="">
+        <div class="flex justify-around items-center bg-roxo-escuro h-32 md:block md:h-48 xl:flex xl:h-28 ">
+            <img src="img/logo.svg" alt="logo CodeChella" class="md:m-auto md:pt-8 xl:m-0 xl:pt-0">
             <div class="hidden md:inline">
-                <ul class="flex justify-around flex-row gap-3 mt-8 mx-12">
+                <ul class="flex justify-around flex-row gap-3 mt-8 mx-12 xl:gap-8 xl:mt-0 xl:mx-0">
                     <li class="font-bold text-xl"><a href="#">A experiência</a></li>
                     <li class="font-bold text-xl"><a href="#">Mapa de Setores</a></li>
                     <li class="font-bold text-xl"><a href="#">Informações</a></li>
@@ -87,14 +88,14 @@
     <main>
         <!-- Banner -->
         <section class="h-60 bg-borealmobile bg-no-repeat bg-cover bg-scroll flex items-center md:bg-borealtablet md:h-110 ">
-            <h2 class='text-center  font-titulo text-white text-3xl tracking-wide md:text-64xl md:leading-tight' >Boas-vindas ao #CodeChella2023!</h2>
+            <h2 class='text-center font-titulo text-white text-3xl tracking-wide md:text-64xl md:leading-tight xl:m-auto xl:antialiased xl:px-60' >Boas-vindas ao #CodeChella2023!</h2>
         </section>
         <!-- Datas -->
-        <section class="flex flex-col items-center m-8 md">
+        <section class="flex flex-col items-center m-8 xl:grid xl:grid-cols-2 xl:justify-items-center xl:grid-flow-row">
             <img src="img/HomepageMobile.svg" alt="três homens tocando instrumentos em um show" class="h-96 m-auto my-8 md:hidden">
-            <img src="img/HomepageTablet.svg" alt="três homens tocando instrumentos em um show" class="hidden md:inline md:m-auto md:mb-12">
-            <h2 class="text-3xl text-white font-texto font-bold text-center md:text-32xl">&lt; 11 e 12 de Março &gt;</h2>
-            <h2 class="text-3xl text-white font-texto font-bold text-center md:text-32xl md:mb-10">Aluródromo de São Paulo</h2>
+            <img src="img/HomepageTablet.svg" alt="três homens tocando instrumentos em um show" class="hidden md:inline md:m-auto md:mb-12 xl:col-span-1 xl:row-span-4 xl:mb-0">
+            <h2 class="text-3xl text-white font-texto font-bold text-center md:text-32xl ">&lt; 11 e 12 de Março &gt;</h2>
+            <h2 class="text-3xl text-white font-texto font-bold text-center md:text-32xl md:mb-10 ">Aluródromo de São Paulo</h2>
             <span class="text-lg text-white font-texto font-normal text-center leading-9 md:text-xl md:leading-10 md:mx-12">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre
                  música, linguagens e, claro, tecnologia!
                 Somos um festival diverso, com vários artistas e referências. Divirta-se!</span>
@@ -103,7 +104,6 @@
                 <img src="img/ticket.svg" alt="logo de um ticket">
             </a>
         </section>
-
         <!-- Atrações -->
         <section class="flex flex-col items-center mt-24">
             <h2 class="text-white text-5xl font-titulo font-normal md:text-64xl md:leading-none">/Line-Up/</h2>
@@ -155,24 +155,25 @@
                 </ul>
             </div>
             <!-- Banner c/ overlay -->
-            <div class="h-80 w-full bg-guitar bg-no-repeat bg-cover mix-blend-multiply mt-16 shadow-xl">
+            <div class="h-80 w-full bg-guitar bg-no-repeat bg-cover mix-blend-multiply mt-16 shadow-xl xl:h-96 xl:bg-guitardesktop xl:bg-center">
             </div>
         </section>
     </main> 
-
     <footer>
-        <section class="flex flex-col items-center mt-8 mb-6 md:justify-center md:gap-8">
-            <img src="img/logo.svg" alt="Logo da CodeChella" class="md:w-full md:h-20">
-            <div class="flex flex-col items-center  md:flex-row md:gap-4">
-                <span class="text-xl font-medium ">Acesses nossas redes:</span>
-                <div class="flex flex-row my-4 gap-3 md:my-0 ">
-                    <a href="#"><img src="img/whatsapp.svg" alt="Icone Whatsapp"></a>
-                    <a href="#"><img src="img/twitch.svg" alt="Icone Twitch"></a>
-                    <a href="#"><img src="img/insta.svg" alt="Icone Instagram"></a>
-                    <a href="#"><img src="img/twitter.svg" alt="Icone Twitter"></a>
+        <section class="flex flex-col items-center mt-8 mb-6 md:justify-center md:gap-8 xl:flex-row xl:justify-around">
+            <div>
+                <img src="img/logo.svg" alt="Logo da CodeChella" class="md:w-full md:h-20">
+                <div class="flex flex-col items-center  md:flex-row md:gap-4">
+                    <span class="text-xl font-medium ">Acesses nossas redes:</span>
+                    <div class="flex flex-row my-4 gap-3 md:my-0 ">
+                        <a href="#"><img src="img/whatsapp.svg" alt="Icone Whatsapp"></a>
+                        <a href="#"><img src="img/twitch.svg" alt="Icone Twitch"></a>
+                        <a href="#"><img src="img/insta.svg" alt="Icone Instagram"></a>
+                        <a href="#"><img src="img/twitter.svg" alt="Icone Twitter"></a>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row md:items-center md:gap-3">
+            <div class="flex flex-col md:flex-row md:items-center md:gap-3 xl:flex-col">
                 <span class="text-xl font-medium mt-6 text-center md:block md:mt-0">Desenvolvido por <strong>Rafael</strong>.</span>
                 <span class="text-xl font-medium mt-3 text-center md:block md:mt-0">Projeto fictício sem fins comerciais</span>
             </div>
