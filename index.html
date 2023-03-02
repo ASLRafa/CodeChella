@@ -10,64 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Importação Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src=""></script>
-    <script>
-        tailwind.config = {
-            theme:{
-                extend:{
-                    colors:{
-                        roxo:{
-                            // Cor primaria
-                            escuro:'#4650BD',
-                            claro:'#B6BCFF',
-                            hover:'#606ADA',
-                            
-                            
-
-                        },
-                        verde:{
-                            // BG datas
-                            escuro:'#008364',
-                            // Secundaria
-                            secundaria:'#304968',
-                            // Tercearia
-                            tercearia:'#36c1a0',
-
-                            // Gradiente background
-                            gradiente:'linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);'
-                        },
-                        gradiente:{
-                            inicio:'#304968',
-                            meio:'#36C1A0',
-                            fim:'#4650BD',
-                        }
-                    },
-                    fontFamily:{
-                        titulo:['Calistoga','sans-serif'],
-                        texto:['Raleway','sans-serif']
-                    },
-                    backgroundImage:{
-                        'borealmobile':"url('img/BorealMobile.svg')",
-                        'borealtablet':"url('img/BorealTablet.svg')",
-                        'guitar':"url('img/guitar.svg')",
-                        'guitardesktop':"url('img/guitarDesktop.jpg')",
-                    },
-                    dropShadow:{
-                        'botao': '4px 4px 0px #444444'
-                    },
-                    fontSize:{
-                        '32xl': '2rem',
-                        '40xl': '2.5rem',
-                        '64xl': '4rem',
-                    },
-                    height:{
-                        '110':'28rem'
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-gradient-to-b from-gradiente-inicio via-gradiente-meio to-gradiente-fim bg-no-repeat h-max">
     <!-- Header -->
@@ -76,7 +19,7 @@
             <img src="img/logo.svg" alt="logo CodeChella" class="md:m-auto md:pt-8 xl:m-0 xl:pt-0">
             <div class="hidden md:inline">
                 <ul class="flex justify-around flex-row gap-3 mt-8 mx-12 xl:gap-8 xl:mt-0 xl:mx-0">
-                    <li class="font-bold text-xl"><a href="#">A experiência</a></li>
+                    <li class="font-bold text-xl"><a href="/pages/exp.html">A experiência</a></li>
                     <li class="font-bold text-xl"><a href="#">Mapa de Setores</a></li>
                     <li class="font-bold text-xl"><a href="#">Informações</a></li>
                     <li class="font-bold text-xl"><a href="#">Ingresso</a></li>
@@ -159,7 +102,7 @@
             </div>
         </section>
     </main> 
-    <footer>
+    <footer class="bg-roxo-escuro">
         <section class="flex flex-col items-center mt-8 mb-6 md:justify-center md:gap-8 xl:flex-row xl:justify-around">
             <div>
                 <img src="img/logo.svg" alt="Logo da CodeChella" class="md:w-full md:h-20">
