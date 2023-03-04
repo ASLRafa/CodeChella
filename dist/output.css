@@ -695,7 +695,7 @@ video {
 }
 
 .bg-experiencia {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('../img/experiencia.jpeg');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/experiencia.jpeg');
 }
 
 .bg-gradient-to-b {
@@ -704,6 +704,22 @@ video {
 
 .bg-guitar {
   background-image: url('../img/guitar.svg');
+}
+
+.bg-setor1 {
+  background-image: url('../img/setor1.jpg');
+}
+
+.bg-setor2 {
+  background-image: url('../img/setor2.jpg');
+}
+
+.bg-setor3 {
+  background-image: url('../img/setor3.jpg');
+}
+
+.bg-setores {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/setores.jpg');
 }
 
 .from-gradiente-inicio {
@@ -891,12 +907,20 @@ video {
     height: 12rem;
   }
 
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:h-96 {
     height: 24rem;
   }
 
   .md\:h-px {
     height: 1px;
+  }
+
+  .md\:w-100 {
+    width: 25rem;
   }
 
   .md\:w-20 {
@@ -1055,6 +1079,18 @@ video {
     height: 24rem;
   }
 
+  .xl\:h-400 {
+    height: 29rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
   .xl\:grid-flow-row {
     grid-auto-flow: row;
   }
@@ -1079,8 +1115,16 @@ video {
     align-items: flex-end;
   }
 
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:justify-around {
     justify-content: space-around;
+  }
+
+  .xl\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .xl\:justify-items-center {
@@ -1095,8 +1139,20 @@ video {
     gap: 2rem;
   }
 
+  .xl\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .xl\:gap-12 {
+    gap: 3rem;
+  }
+
   .xl\:bg-guitardesktop {
     background-image: url('../img/guitarDesktop.jpg');
+  }
+
+  .xl\:bg-bottom {
+    background-position: bottom;
   }
 
   .xl\:bg-center {

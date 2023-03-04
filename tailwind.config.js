@@ -35,13 +35,16 @@ module.exports = {
         backgroundImage:{
             'borealmobile':"url('../img/BorealMobile.svg')",
             'borealtablet':"url('../img/BorealTablet.svg')",
-            'experiencia':"linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('../img/experiencia.jpeg')",
-       
+            'experiencia':"linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/experiencia.jpeg')",
             'guitar':"url('../img/guitar.svg')",
             'guitardesktop':"url('../img/guitarDesktop.jpg')",
             'exp1':"url('../img/exp1.jpeg')",
             'exp2':"url('../img/exp2.jpeg')",
             'exp3':"url('../img/exp3.jpeg')",
+            'setores': "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/setores.jpg')",
+            'setor1':"url('../img/setor1.jpg')",
+            'setor2':"url('../img/setor2.jpg')",
+            'setor3':"url('../img/setor3.jpg')",
 
         },
         dropShadow:{
@@ -53,6 +56,12 @@ module.exports = {
             '64xl': '4rem',
         },
         height:{
+            '100':'25rem',
+            '110':'28rem',
+            '400':'29rem',
+        },
+        width:{
+            '100':'25rem',
             '110':'28rem',
             '400':'29rem',
         }
