@@ -919,8 +919,8 @@ video {
     height: 1px;
   }
 
-  .md\:w-100 {
-    width: 25rem;
+  .md\:w-110 {
+    width: 28rem;
   }
 
   .md\:w-20 {
@@ -1030,8 +1030,16 @@ video {
     grid-column: span 1 / span 1;
   }
 
+  .xl\:col-start-1 {
+    grid-column-start: 1;
+  }
+
   .xl\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .xl\:col-end-4 {
+    grid-column-end: 4;
   }
 
   .xl\:row-span-4 {
@@ -1055,12 +1063,25 @@ video {
     margin-right: 0px;
   }
 
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xl\:mb-0 {
     margin-bottom: 0px;
   }
 
   .xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .xl\:mt-32 {
+    margin-top: 8rem;
+  }
+
+  .xl\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .xl\:flex {
@@ -1079,16 +1100,18 @@ video {
     height: 24rem;
   }
 
-  .xl\:h-400 {
-    height: 29rem;
-  }
-
-  .xl\:w-full {
-    width: 100%;
-  }
-
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-min {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .xl\:w-max {
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .xl\:grid-flow-row {
@@ -1097,6 +1120,10 @@ video {
 
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
@@ -1115,8 +1142,8 @@ video {
     align-items: flex-end;
   }
 
-  .xl\:justify-center {
-    justify-content: center;
+  .xl\:items-center {
+    align-items: center;
   }
 
   .xl\:justify-around {
@@ -1139,12 +1166,24 @@ video {
     gap: 2rem;
   }
 
-  .xl\:gap-6 {
-    gap: 1.5rem;
+  .xl\:gap-negative {
+    gap: -2rem;
   }
 
   .xl\:gap-12 {
     gap: 3rem;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
+  }
+
+  .xl\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .xl\:self-center {
+    align-self: center;
   }
 
   .xl\:bg-guitardesktop {
@@ -1177,8 +1216,16 @@ video {
     text-align: left;
   }
 
+  .xl\:text-center {
+    text-align: center;
+  }
+
   .xl\:text-right {
     text-align: right;
+  }
+
+  .xl\:text-40xl {
+    font-size: 2.5rem;
   }
 
   .xl\:antialiased {

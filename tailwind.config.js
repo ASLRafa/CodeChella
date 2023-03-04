@@ -64,7 +64,10 @@ module.exports = {
             '100':'25rem',
             '110':'28rem',
             '400':'29rem',
-        }
+        },
+        spacing: {
+            'negative': '-2rem',
+          }
     }
   },
   plugins: [],
