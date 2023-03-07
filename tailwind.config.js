@@ -11,6 +11,12 @@ module.exports = {
                 hover:'#606ADA',
 
             },
+            azul:{
+                claro:'#C8DEEF',
+            },
+            cinza:{
+                escuro:"#444444",
+            },
             verde:{
                 // BG datas
                 escuro:'#008364',
