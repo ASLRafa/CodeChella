@@ -37,10 +37,10 @@
      
         </section>
             <!-- Form -->
-        <section class="mx-4">
-            <h2 class="text-32xl font-titulo text-center mb-12">Preencha o formulário a seguir:</h2>
-            <form action="" class="flex flex-col items-start text-white gap-8 ">
-                <div>
+        <section class="mx-4 mb-12 md:mx-14 xl:mx-96">
+            <h2 class="text-5xl font-titulo text-center mb-12 mt-8">Preencha o formulário a seguir:</h2>
+            <form action="" class="flex flex-col items-start text-white gap-8 xl:flex-row xl:flex-wrap xl:gap-x-2">
+                <div class="w-full xl:">
                     <label for="nomecompleto" class="text-32xl font-bold" >Nome Completo:</label>
                     <input type="text" name="nomecompleto" id="input_nome" placeholder="" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
                 </div>
@@ -48,7 +48,7 @@
                     <label for="email" class="text-32xl font-bold" >Email:</label>
                     <input type="email" name="email" id="email" placeholder=" " class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
                 </div>
-                <div>
+                <div class="w-full xl:w-5/12">
                 <label for="ingresso" class="text-32xl font-bold" >Tipo de Ingresso</label>
                     <select id="ingresso" name="ingresso" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
                         <option value="pista comum" class="">Pista Comum</option>
@@ -58,11 +58,11 @@
                         <option value="rampas" class="">Rampas</option>
                     </select>
                 </div>
-                <div>
+                <div class="w-full md:w-3/4 xl:w-6/12">
                     <label for="nascimento" class="text-32xl font-bold">Data de nascimento:</label>
                     <input type="date" name="nascimento" id="nascimento" value="2000-01-01" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
                 </div>
-                <div class="m-auto flex flex-row items-center justify-around text-xl bg-roxo-escuro py-3 w-5/12 mt-8 drop-shadow-botao hover:bg-roxo-hover rounded-2xl md:w-5/12 md:py-5">
+                <div class="m-auto flex flex-row items-center justify-around text-xl bg-roxo-escuro py-3 w-36 mt-4 drop-shadow-botao hover:bg-roxo-hover rounded-2xl">
                     <input type="button" value="Avançar!" class="">
                     <img src="../img/arrowright.svg" alt="seta para direita" class="">
                 </div>

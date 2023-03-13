@@ -725,6 +725,11 @@ select {
   margin-bottom: 2rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -755,6 +760,10 @@ select {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -808,6 +817,18 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .flex-row {
@@ -1193,6 +1214,11 @@ select {
     margin-bottom: 0px;
   }
 
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -1255,6 +1281,18 @@ select {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-2\/4 {
+    width: 50%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:flex-row {
@@ -1396,6 +1434,16 @@ select {
     margin-right: auto;
   }
 
+  .xl\:mx-64 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .xl\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
   .xl\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1442,6 +1490,18 @@ select {
     width: min-content;
   }
 
+  .xl\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .xl\:w-6\/12 {
+    width: 50%;
+  }
+
+  .xl\:w-auto {
+    width: auto;
+  }
+
   .xl\:grid-flow-row {
     grid-auto-flow: row;
   }
@@ -1460,6 +1520,10 @@ select {
 
   .xl\:flex-col {
     flex-direction: column;
+  }
+
+  .xl\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .xl\:items-start {
@@ -1496,6 +1560,15 @@ select {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-y-2 {
+    row-gap: 0.5rem;
+  }
+
+  .xl\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 
   .xl\:bg-guitardesktop {
