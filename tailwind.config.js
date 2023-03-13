@@ -49,6 +49,7 @@ module.exports = {
             'exp3':"url('../img/exp3.jpeg')",
             'setores': "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/setores.jpg')",
             'info': "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/info.jpg')",
+            'ingresso': "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/gingresso.jpg')",
             'setor1':"url('../img/setor1.jpg')",
             'setor2':"url('../img/setor2.jpg')",
             'setor3':"url('../img/setor3.jpg')",
@@ -77,5 +78,7 @@ module.exports = {
           }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

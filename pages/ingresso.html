@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth font-texto text-white">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A experiência</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-gradiente-inicio via-gradiente-meio to-gradiente-fim bg-no-repeat h-max">    
+    <header class="">
+        <div class="flex justify-around items-center bg-roxo-escuro h-32 md:block md:h-48 xl:flex xl:h-28 ">
+            <a href="../index.html">
+                <img src="../img/logo.svg" alt="logo CodeChella" class="md:m-auto md:pt-8 xl:m-0 xl:pt-0">
+            </a>
+            <div class="hidden md:inline">
+                <ul class="flex justify-around flex-row gap-3 mt-8 mx-12 xl:gap-8 xl:mt-0 xl:mx-0">
+                    <li class="font-bold text-xl"><a href="/pages/exp.html">A experiência</a></li>
+                    <li class="font-bold text-xl"><a href="/pages/setor.html">Mapa de Setores</a></li>
+                    <li class="font-bold text-xl"><a href="/pages/info.html">Informações</a></li>
+                    <li class="font-bold text-xl"><a href="#">Ingresso</a></li>
+                </ul>
+            </div>
+            <img src="../img/menu.svg" alt="Menu Hamburguer" class="md:hidden">
+        </div>
+    </header>
+    <main >
+        <!-- Banner -->
+        <section class= "h-80 bg-ingresso bg-no-repeat bg-cover bg-scroll flex items-center mb-8 md:h-110 ">
+            <h2 class='text-center m-auto font-titulo text-white text-3xl tracking-wide md:text-64xl md:leading-tight xl:m-auto xl:antialiased xl:px-60' >Garanta seu Ingresso</h2>
+        </section>
+     
+        </section>
+            <!-- Form -->
+        <section class="mx-4">
+            <h2 class="text-32xl font-titulo text-center mb-12">Preencha o formulário a seguir:</h2>
+            <form action="" class="flex flex-col items-start text-white gap-8 ">
+                <div>
+                    <label for="nomecompleto" class="text-32xl font-bold" >Nome Completo:</label>
+                    <input type="text" name="nomecompleto" id="input_nome" placeholder="" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
+                </div>
+                <div class="w-full">
+                    <label for="email" class="text-32xl font-bold" >Email:</label>
+                    <input type="email" name="email" id="email" placeholder=" " class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
+                </div>
+                <div>
+                <label for="ingresso" class="text-32xl font-bold" >Tipo de Ingresso</label>
+                    <select id="ingresso" name="ingresso" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
+                        <option value="pista comum" class="">Pista Comum</option>
+                        <option value="pista premium" class="">Pista Premium</option>
+                        <option value="cadeiras terreo" class="">Cadeiras Térreo</option>
+                        <option value="cadeiras superiores" class="">Cadeiras superiores</option>
+                        <option value="rampas" class="">Rampas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="nascimento" class="text-32xl font-bold">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento" value="2000-01-01" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
+                </div>
+                <div class="m-auto flex flex-row items-center justify-around text-xl bg-roxo-escuro py-3 w-5/12 mt-8 drop-shadow-botao hover:bg-roxo-hover rounded-2xl md:w-5/12 md:py-5">
+                    <input type="button" value="Avançar!" class="">
+                    <img src="../img/arrowright.svg" alt="seta para direita" class="">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-roxo-escuro">
+        <section class="flex flex-col items-center mt-8 mb-6 md:justify-center md:gap-8 xl:flex-row xl:justify-around xl:py-12">
+            <div>
+                <img src="../img/logo.svg" alt="Logo da CodeChella" class="md:w-full md:h-20">
+                <div class="flex flex-col items-center  md:flex-row md:gap-4">
+                    <span class="text-xl font-medium ">Acesses nossas redes:</span>
+                    <div class="flex flex-row my-4 gap-3 md:my-0 ">
+                        <a href="#"><img src="../img/whatsapp.svg" alt="Icone Whatsapp"></a>
+                        <a href="#"><img src="../img/twitch.svg" alt="Icone Twitch"></a>
+                        <a href="#"><img src="../img/insta.svg" alt="Icone Instagram"></a>
+                        <a href="#"><img src="../img/twitter.svg" alt="Icone Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center md:gap-3 xl:flex-col">
+                <span class="text-xl font-medium mt-6 text-center md:block md:mt-0">Desenvolvido por <strong>Rafael</strong>.</span>
+                <span class="text-xl font-medium mt-3 text-center md:block md:mt-0">Projeto fictício sem fins comerciais</span>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
