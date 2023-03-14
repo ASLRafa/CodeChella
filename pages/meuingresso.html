@@ -29,44 +29,25 @@
             <img src="../img/menu.svg" alt="Menu Hamburguer" class="md:hidden">
         </div>
     </header>
-    <main >
-        <!-- Banner -->
-        <section class= "h-80 bg-ingresso bg-no-repeat bg-cover bg-scroll flex items-center mb-8 md:h-110 ">
-            <h2 class='text-center m-auto font-titulo text-white text-3xl tracking-wide md:text-64xl md:leading-tight xl:m-auto xl:antialiased xl:px-60' >Garanta seu Ingresso</h2>
-        </section>
-     
-        </section>
-            <!-- Form -->
-        <section class="mx-4 mb-12 md:mx-14 xl:mx-96">
-            <h2 class="text-5xl font-titulo text-center mb-12 mt-8">Preencha o formulário a seguir:</h2>
-            <form action="" class="flex flex-col items-start text-white gap-8 xl:flex-row xl:flex-wrap xl:gap-x-2">
-                <div class="w-full xl:">
-                    <label for="nomecompleto" class="text-32xl font-bold" >Nome Completo:</label>
-                    <input type="text" name="nomecompleto" id="input_nome" placeholder="nome" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
+    <main class="mx-6 md:mx-16 xl:mx-80">
+        <div class="my-12 mx-6">
+        <h2 class="text-32xl font-bold text-center leading-9">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h2>
+        </div>
+        <section class="bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 shadow-sombrinha m-auto flex flex-col p-8 gap-8 md:gap-4">
+            <div class="flex flex-row justify-between">
+                <img src="../img/logo.svg" alt="logo do codechella" class="w-28">
+                <img src="../img/logosimple.svg" alt="logo do codechella simplificado" class="">
+            </div>
+            <div class="xl:flex xl:flex-row xl:items-center">
+                <img src="../img/qrcode.svg" alt="QRcode" class="md:w-80 md:m-auto xl:m-0">
+                <div class="">
+                    <h2 class="text-32xl text-center font-bold xl:text-left xl:mb-4"><strong class="font-bold text-gray-50">Raquel</strong> Vitoria</h2>
+                    <h3 class="text-xl leading-10 text-center xl:text-left">Ingresso Costesia</h3>
+                    <h3 class="text-xl leading-10 text-center xl:text-left">Setor Pista</h3>
+                    <h3 class="text-xl leading-10 text-center xl:text-left">Data: 11/03</h3>
+                    <h3 class="text-xl leading-10 text-center xl:text-left">Local: São Paulo-SP</h3>   
                 </div>
-                <div class="w-full">
-                    <label for="email" class="text-32xl font-bold" >Email:</label>
-                    <input type="email" name="email" id="email" placeholder=" " class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
-                </div>
-                <div class="w-full xl:w-5/12">
-                <label for="ingresso" class="text-32xl font-bold" >Tipo de Ingresso</label>
-                    <select id="ingresso" name="ingresso" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
-                        <option value="pista comum" class="">Pista Comum</option>
-                        <option value="pista premium" class="">Pista Premium</option>
-                        <option value="cadeiras terreo" class="">Cadeiras Térreo</option>
-                        <option value="cadeiras superiores" class="">Cadeiras superiores</option>
-                        <option value="rampas" class="">Rampas</option>
-                    </select>
-                </div>
-                <div class="w-full md:w-3/4 xl:w-6/12">
-                    <label for="nascimento" class="text-32xl font-bold">Data de nascimento:</label>
-                    <input type="date" name="nascimento" id="nascimento" value="2000-01-01" class="w-full h-12 text-black font-bold font-texto border-none focus:ring-2 focus:ring-roxo-escuro">
-                </div>
-                <div class="m-auto flex flex-row items-center justify-around text-xl bg-roxo-escuro py-3 w-36 mt-4 drop-shadow-botao hover:bg-roxo-hover rounded-2xl">
-                    <input type="button" value="Avançar!" class="">
-                    <img src="../img/arrowright.svg" alt="seta para direita" class="">
-                </div>
-            </form>
+            </div>
         </section>
     </main>
     <footer class="bg-roxo-escuro">
@@ -90,5 +71,6 @@
         </section>
     </footer>
 
+    <script></script>
 </body>
 </html>

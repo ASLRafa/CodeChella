@@ -9,6 +9,7 @@ module.exports = {
                 escuro:'#4650BD',
                 claro:'#B6BCFF',
                 hover:'#606ADA',
+                bg:'rgba(17, 25, 40, 0.6)'
 
             },
             azul:{
@@ -75,7 +76,11 @@ module.exports = {
         },
         spacing: {
             'negative': '-2rem',
-          }
+        },
+        boxShadow:{
+            'sombrinha':"0px 0px 40px 15px rgba(0,0,0,0.2);"
+
+        }
     }
   },
   plugins: [
