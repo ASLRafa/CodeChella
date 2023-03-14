@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <link href="../dist/output.css" rel="stylesheet">
+    <script src="../script.js"></script>
 </head>
 <body class="bg-gradient-to-b from-gradiente-inicio via-gradiente-meio to-gradiente-fim bg-no-repeat h-max">    
     <header class="">
@@ -17,15 +18,15 @@
             <a href="../index.html">
                 <img src="../img/logo.svg" alt="logo CodeChella" class="md:m-auto md:pt-8 xl:m-0 xl:pt-0">
             </a>
-            <div class="hidden md:inline">
-                <ul class="flex justify-around flex-row gap-3 mt-8 mx-12 xl:gap-8 xl:mt-0 xl:mx-0">
+            <div class="hidden md:inline" id="divmenu">
+                <ul class="md:flex md:justify-around md:flex-row md:gap-3 md:mt-8 md:mx-12 xl:gap-8 xl:mt-0 xl:mx-0" id="menuul">
                     <li class="font-bold text-xl"><a href="/pages/exp.html">A experiência</a></li>
                     <li class="font-bold text-xl"><a href="/pages/setor.html">Mapa de Setores</a></li>
                     <li class="font-bold text-xl"><a href="/pages/info.html">Informações</a></li>
                     <li class="font-bold text-xl"><a href="/pages/ingresso.html">Ingresso</a></li>
                 </ul>
             </div>
-            <img src="../img/menu.svg" alt="Menu Hamburguer" class="md:hidden">
+            <img src="../img/menu.svg" alt="Menu Hamburguer" class="md:hidden" onclick="menu()">
         </div>
         <!-- Banner -->
         <section class= "h-80 bg-info bg-no-repeat bg-cover bg-scroll flex items-center mb-8 md:h-110 xl:bg-bottom">

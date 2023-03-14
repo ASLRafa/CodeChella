@@ -80,7 +80,13 @@ module.exports = {
         boxShadow:{
             'sombrinha':"0px 0px 40px 15px rgba(0,0,0,0.2);"
 
-        }
+        },
+        margin:{
+            '120':'30rem'
+        },
+        inset: {
+            '4rem': '4.5rem',
+          }
     }
   },
   plugins: [
